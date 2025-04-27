@@ -1,15 +1,18 @@
 body {
+    min-height: 100vh;
     display: grid;
     place-content: center;
+}
 
-    min-height: 100vh;
+.indexRoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .appNameContainer {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
+    position: relative;
+    margin-bottom: 60px;
 }
 
 .appHeading {
@@ -20,18 +23,20 @@ body {
 
 .cloudIcon {
     position: absolute;
-    left: -35%;
-    top: -70%;
+    left: -70px;
+    top: -45px;
 }
 
 .sunIcon {
     position: absolute;
-    right: -30%;
-    bottom: -70%;
+    right: -70px;
+    bottom: -35px;
 }
 
 .citySearchForm {
     width: fit-content;
+
+    margin-bottom: 70px;
 }
 
 .inputSubmitWrapper {
@@ -87,3 +92,51 @@ body {
     width: 100%;
     background-color: var(--green);
 }
+
+/* weather card ------- */
+
+.weatherCard {
+    width: 280px;
+    height: 324px;
+    background-color: var(--pastelBlue);
+    border-radius: 25px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherCard .temperatureIconWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature .temperatureNumber {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.temperature .celcius {
+    font-size: 1.85rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.weatherCard .weatherIcon {
+    width: 67px;
+    aspect-ratio: 1;
+}
+
+.weatherCard .shortDescription {
+    color: var(--secondaryWhite);
+    font-size: 1.25rem;
+    height: 100%;
+}
+
+.weatherCard .weatherCardCity {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+/* weather card ------- */

@@ -8,34 +8,74 @@
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <div class="appNameContainer">
-            <h1 class="appHeading">Get weather</h1>
-            <img src="assets/CloudIcon.svg" class="cloudIcon" alt="cloudIcon" />
-            <img src="assets/SunIcon.svg" class="sunIcon" alt="sunIcon" />
-        </div>
-
-        <form id="citySearchForm" class="citySearchForm">
-            <div class="inputSubmitWrapper">
-                <input
-                    class="searchInput"
-                    type="text"
-                    placeholder="Enter the city name..."
+        <div class="indexRoot">
+            <div class="appNameContainer">
+                <h1 class="appHeading">Get weather</h1>
+                <img
+                    src="assets/CloudIcon.svg"
+                    class="cloudIcon"
+                    alt="cloudIcon"
                 />
-                <button
-                    type="submit"
-                    class="searchSubmitButton"
-                    id="searchButton"
-                >
-                    <img
-                        src="assets/SearchIcon.svg"
-                        alt="search icon"
-                        class="searchIcon"
-                    />
-                </button>
+                <img src="assets/SunIcon.svg" class="sunIcon" alt="sunIcon" />
             </div>
 
-            <div class="searchFormUnderline"></div>
-        </form>
+            <form id="citySearchForm" class="citySearchForm">
+                <div class="inputSubmitWrapper">
+                    <input
+                        class="searchInput"
+                        type="text"
+                        placeholder="Enter the city name..."
+                    />
+                    <button
+                        type="submit"
+                        class="searchSubmitButton"
+                        id="searchButton"
+                    >
+                        <img
+                            src="assets/SearchIcon.svg"
+                            alt="search icon"
+                            class="searchIcon"
+                        />
+                    </button>
+                </div>
+
+                <div class="searchFormUnderline"></div>
+            </form>
+
+            <div class="weatherCard">
+                <div class="temperatureIconWrapper">
+                    <div class="temperature">
+                        <span class="temperatureNumber">20</span>
+                        <span class="celcius">°C</span>
+                    </div>
+                    <img
+                        src="assets/CloudIcon.svg"
+                        alt="weather icon"
+                        class="weatherIcon"
+                    />
+                </div>
+                <div class="shortDescription">clear sky</div>
+                <div class="weatherCardCity">London</div>
+            </div>
+        </div>
+
+        <template id="weatherCardTemplate">
+            <div class="weatherCard">
+                <div class="temperatureIconWrapper">
+                    <div class="temperature">
+                        <span class="temperatureNumber">20</span>
+                        <span class="celcius">°C</span>
+                    </div>
+                    <img
+                        src="assets/CloudIcon.svg"
+                        alt="weather icon"
+                        class="weatherIcon"
+                    />
+                </div>
+                <div class="shortDescription">clear sky</div>
+                <div class="weatherCardCity">London</div>
+            </div>
+        </template>
 
         <script src="libs/jquery-3.7.1.min.js"></script>
         <script src="js/index.js"></script>
