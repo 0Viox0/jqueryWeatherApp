@@ -1,0 +1,89 @@
+body {
+    display: grid;
+    place-content: center;
+
+    min-height: 100vh;
+}
+
+.appNameContainer {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
+
+.appHeading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: inline;
+}
+
+.cloudIcon {
+    position: absolute;
+    left: -35%;
+    top: -70%;
+}
+
+.sunIcon {
+    position: absolute;
+    right: -30%;
+    bottom: -70%;
+}
+
+.citySearchForm {
+    width: fit-content;
+}
+
+.inputSubmitWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.citySearchForm .searchSubmitButton {
+    background-color: var(--lightBlue);
+    border: none;
+    outline: none;
+
+    width: 34px;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 7px;
+
+    border-radius: 3px;
+}
+
+.citySearchForm .searchSubmitButton:hover {
+    cursor: pointer;
+}
+
+.citySearchForm .searchSubmitButton:active {
+    scale: 0.95;
+}
+
+.citySearchForm .searchIcon {
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+}
+
+.citySearchForm .searchInput {
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    padding-right: 70px;
+
+    color: var(--white);
+}
+
+.citySearchForm .searchFormUnderline {
+    height: 1px;
+    width: 100%;
+    background-color: var(--green);
+}
