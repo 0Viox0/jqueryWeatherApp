@@ -1,0 +1,91 @@
+.historyRoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+
+    width: 50%;
+    margin: 100px auto 0px auto;
+}
+
+.filterFormControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px auto 80px;
+
+    width: 100%;
+}
+
+.filterFormControls .backButton {
+    display: grid;
+    place-content: center;
+    padding: 5px;
+}
+
+.filterFormControls .filterButton {
+    padding: 6px 43px;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--green);
+}
+
+.inputWrapper .cityNameInput {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1.25rem;
+    color: var(--white);
+}
+
+.temperatureInputWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.temperatureInputWrapper .innerTemperatureWrapper .numberInput {
+    font-size: 1.25rem;
+    color: var(--white);
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    margin-right: 8px;
+
+    width: 4ch;
+}
+
+.numberInput::-webkit-outer-spin-button,
+.numberInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.temperatureInputWrapper .celcius {
+    font-size: 1.56rem;
+}
+
+.savedCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+    margin-bottom: 50px;
+}
+
+.cityRemoveButtonWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.removeCardButton {
+    display: grid;
+    place-content: center;
+    padding: 6px;
+}

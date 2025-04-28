@@ -3,11 +3,86 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Main page</title>
+        <title>History page</title>
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/history.css" />
     </head>
     <body>
+        <div class="historyRoot">
+            <div class="appNameContainer">
+                <h1 class="appHeading">Get weather</h1>
+                <img
+                    src="assets/CloudIcon.svg"
+                    class="cloudIcon"
+                    alt="cloudIcon"
+                />
+                <img src="assets/SunIcon.svg" class="sunIcon" alt="sunIcon" />
+            </div>
+
+            <form class="filterFormControls" id="filterFormControls">
+                <button class="primaryButton backButton" type="button">
+                    <img src="assets/BackIcon.svg" alt="go back icon" />
+                </button>
+
+                <div class="inputWrapper">
+                    <input
+                        type="text"
+                        class="cityNameInput"
+                        placeholder="Enter the city name..."
+                    />
+                    <div class="line"></div>
+                </div>
+
+                <div class="temperatureInputWrapper">
+                    <div class="innerTemperatureWrapper">
+                        <input
+                            type="number"
+                            class="numberInput"
+                            placeholder="20"
+                            step="any"
+                        />
+                        <div class="line"></div>
+                    </div>
+                    <span class="celcius">°C</span>
+                </div>
+
+                <button type="submit" class="primaryButton filterButton">
+                    Filter
+                </button>
+            </form>
+
+            <div class="savedCardContainer" id="savedCardContainer"></div>
+        </div>
+
+        <template id="weatherCardTemplate">
+            <div class="weatherCard">
+                <div class="temperatureIconWrapper">
+                    <div class="temperature">
+                        <span class="temperatureNumber"></span>
+                        <span class="celcius">°C</span>
+                    </div>
+                    <img
+                        src="assets/CloudIcon.svg"
+                        alt="weather icon"
+                        class="weatherIcon"
+                    />
+                </div>
+                <div class="shortDescription"></div>
+                <div class="cityRemoveButtonWrapper">
+                    <div class="weatherCardCity"></div>
+                    <button
+                        class="primaryButton removeCardButton"
+                        id="removeCardButton"
+                    >
+                        <img
+                            src="assets/CloseIcon.svg"
+                            alt="remote item icon"
+                        />
+                    </button>
+                </div>
+            </div>
+        </template>
+
         <script src="libs/jquery-3.7.1.min.js"></script>
         <script src="js/history.js"></script>
     </body>

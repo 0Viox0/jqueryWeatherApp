@@ -20,3 +20,98 @@ body {
     color: var(--white);
     font-family: 'Noto Sans', sans-serif;
 }
+
+/* button */
+
+.primaryButton {
+    background-color: var(--lightBlue);
+    border: none;
+    outline: none;
+    font-size: 1.87rem;
+    border-radius: 7px;
+}
+
+.primaryButton:hover {
+    cursor: pointer;
+}
+
+.primaryButton:active {
+    scale: 0.96;
+}
+
+/* button */
+
+/* main heading */
+
+.appNameContainer {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.appHeading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    display: inline;
+}
+
+.cloudIcon {
+    position: absolute;
+    left: -70px;
+    top: -45px;
+}
+
+.sunIcon {
+    position: absolute;
+    right: -70px;
+    bottom: -35px;
+}
+
+/* main heading */
+
+/* weather card ------- */
+
+.weatherCard {
+    width: 280px;
+    height: 324px;
+    background-color: var(--pastelBlue);
+    border-radius: 25px;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.weatherCard .temperatureIconWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature .temperatureNumber {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.temperature .celcius {
+    font-size: 1.85rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.weatherCard .weatherIcon {
+    width: 67px;
+    aspect-ratio: 1;
+}
+
+.weatherCard .shortDescription {
+    color: var(--secondaryWhite);
+    font-size: 1.25rem;
+    height: 100%;
+}
+
+.weatherCard .weatherCardCity {
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+/* weather card ------- */

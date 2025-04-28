@@ -10,29 +10,6 @@ body {
     align-items: center;
 }
 
-.appNameContainer {
-    position: relative;
-    margin-bottom: 60px;
-}
-
-.appHeading {
-    font-size: 2.5rem;
-    font-weight: 400;
-    display: inline;
-}
-
-.cloudIcon {
-    position: absolute;
-    left: -70px;
-    top: -45px;
-}
-
-.sunIcon {
-    position: absolute;
-    right: -70px;
-    bottom: -35px;
-}
-
 .citySearchForm {
     width: fit-content;
 
@@ -93,50 +70,47 @@ body {
     background-color: var(--green);
 }
 
-/* weather card ------- */
+#weatherCardContainer {
+    display: flex;
+}
 
-.weatherCard {
-    width: 280px;
-    height: 324px;
-    background-color: var(--pastelBlue);
-    border-radius: 25px;
-    padding: 30px;
+.errorMessage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondaryWhite);
+}
 
+.rightButtonsWrapper {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
 }
 
-.weatherCard .temperatureIconWrapper {
+.historyTextIconWrapper {
+    background-color: var(--secondaryWhite);
+    border-radius: 25px;
+    height: 100%;
+    margin-bottom: 20px;
+
+    display: grid;
+    place-content: center;
+}
+
+.historyTextIconWrapper:hover {
+    cursor: pointer;
+}
+
+.historyTextIconWrapper .historyText {
+    text-align: center;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.indexSaveButton {
+    padding: 8px 45px;
+    width: 157px;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
-.temperature .temperatureNumber {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.temperature .celcius {
-    font-size: 1.85rem;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.weatherCard .weatherIcon {
-    width: 67px;
-    aspect-ratio: 1;
-}
-
-.weatherCard .shortDescription {
-    color: var(--secondaryWhite);
-    font-size: 1.25rem;
-    height: 100%;
-}
-
-.weatherCard .weatherCardCity {
-    font-size: 1.875rem;
-    font-weight: bold;
-}
-
-/* weather card ------- */

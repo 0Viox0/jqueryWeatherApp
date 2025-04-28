@@ -38,32 +38,16 @@
                         />
                     </button>
                 </div>
-
                 <div class="searchFormUnderline"></div>
             </form>
-
-            <div class="weatherCard">
-                <div class="temperatureIconWrapper">
-                    <div class="temperature">
-                        <span class="temperatureNumber">20</span>
-                        <span class="celcius">°C</span>
-                    </div>
-                    <img
-                        src="assets/CloudIcon.svg"
-                        alt="weather icon"
-                        class="weatherIcon"
-                    />
-                </div>
-                <div class="shortDescription">clear sky</div>
-                <div class="weatherCardCity">London</div>
-            </div>
+            <div id="weatherCardContainer"></div>
         </div>
 
         <template id="weatherCardTemplate">
             <div class="weatherCard">
                 <div class="temperatureIconWrapper">
                     <div class="temperature">
-                        <span class="temperatureNumber">20</span>
+                        <span class="temperatureNumber"></span>
                         <span class="celcius">°C</span>
                     </div>
                     <img
@@ -72,8 +56,24 @@
                         class="weatherIcon"
                     />
                 </div>
-                <div class="shortDescription">clear sky</div>
-                <div class="weatherCardCity">London</div>
+                <div class="shortDescription"></div>
+                <div class="weatherCardCity"></div>
+            </div>
+        </template>
+
+        <template id="errorElement">
+            <div class="errorMessage">This city was not found</div>
+        </template>
+
+        <template id="rightButtonsTemplate">
+            <div class="rightButtonsWrapper">
+                <div class="historyTextIconWrapper" id="historyButton">
+                    <img src="assets/TimeIcon.svg" alt="time icon" />
+                    <span class="historyText">History</span>
+                </div>
+                <button class="primaryButton indexSaveButton" id="saveButton">
+                    Save
+                </button>
             </div>
         </template>
 
