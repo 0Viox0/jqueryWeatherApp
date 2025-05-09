@@ -42,6 +42,11 @@ $(function () {
         const cardsRaw = localStorage.getItem('weatherHistory');
         const cards = JSON.parse(cardsRaw).filter(weatherformFilter);
 
+        if (!cards.length) {
+            displayError();
+            return;
+        }
+
         cards.forEach((card) => {
             $weatherCard = $($('#weatherCardTemplate').html());
             $weatherCard
@@ -62,8 +67,14 @@ $(function () {
             (!cityFilter ||
                 item.cardCityName
                     .toLowerCase()
-                    .includes(cityFilter.toLowerCase())) &
+                    .includes(cityFilter.toLowerCase())) &&
             (!temperatureFilter || item.temperature === temperatureFilter)
         );
+    }
+
+    function displayError() {
+        $errorElement = $($('#errorElement').html());
+
+        $('#savedCardContainer').html($errorElement);
     }
 });

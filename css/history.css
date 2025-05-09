@@ -81,11 +81,18 @@
 .cityRemoveButtonWrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 }
 
 .removeCardButton {
     display: grid;
     place-content: center;
     padding: 6px;
+}
+
+.errorMessage {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondaryWhite);
+    grid-column: span 3;
 }

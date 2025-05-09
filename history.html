@@ -69,7 +69,9 @@
                 </div>
                 <div class="shortDescription"></div>
                 <div class="cityRemoveButtonWrapper">
-                    <div class="weatherCardCity"></div>
+                    <div class="cityContainer">
+                        <div class="weatherCardCity"></div>
+                    </div>
                     <button
                         class="primaryButton removeCardButton"
                         id="removeCardButton"
@@ -81,6 +83,10 @@
                     </button>
                 </div>
             </div>
+        </template>
+
+        <template id="errorElement">
+            <div class="errorMessage">No cities saved :(</div>
         </template>
 
         <script src="libs/jquery-3.7.1.min.js"></script>
