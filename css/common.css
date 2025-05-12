@@ -111,22 +111,28 @@ body {
 
 .weatherCard .cityContainer {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 2.4em;
+    align-items: flex-end;
+
+    height: 200px;
+    width: 70%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    word-break: break-word;
 }
 
 .weatherCard .weatherCardCity {
     font-weight: bold;
     font-size: 1.875rem;
 
-    line-height: 1.2;
-
     display: -webkit-box;
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
+
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* weather card ------- */
